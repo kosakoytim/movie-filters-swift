@@ -14,6 +14,7 @@
 		D52C2F5C25FDDA3000A2D7AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D52C2F5B25FDDA3000A2D7AA /* Assets.xcassets */; };
 		D52C2F5F25FDDA3000A2D7AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D52C2F5D25FDDA3000A2D7AA /* LaunchScreen.storyboard */; };
 		D52C2F6A25FDDA3000A2D7AA /* Movie_Filter_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52C2F6925FDDA3000A2D7AA /* Movie_Filter_SwiftTests.swift */; };
+		D52C2F7725FDDB2F00A2D7AA /* Films.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52C2F7625FDDB2F00A2D7AA /* Films.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		D52C2F6525FDDA3000A2D7AA /* Movie Filter SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movie Filter SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D52C2F6925FDDA3000A2D7AA /* Movie_Filter_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie_Filter_SwiftTests.swift; sourceTree = "<group>"; };
 		D52C2F6B25FDDA3000A2D7AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D52C2F7625FDDB2F00A2D7AA /* Films.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Films.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		D52C2F5125FDDA2B00A2D7AA /* Movie Filter Swift */ = {
 			isa = PBXGroup;
 			children = (
+				D52C2F7425FDDB1700A2D7AA /* DataModel */,
 				D52C2F5225FDDA2B00A2D7AA /* AppDelegate.swift */,
 				D52C2F5425FDDA2B00A2D7AA /* SceneDelegate.swift */,
 				D52C2F5625FDDA2B00A2D7AA /* ViewController.swift */,
@@ -97,6 +100,22 @@
 				D52C2F6B25FDDA3000A2D7AA /* Info.plist */,
 			);
 			path = "Movie Filter SwiftTests";
+			sourceTree = "<group>";
+		};
+		D52C2F7425FDDB1700A2D7AA /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				D52C2F7525FDDB2400A2D7AA /* Films */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		D52C2F7525FDDB2400A2D7AA /* Films */ = {
+			isa = PBXGroup;
+			children = (
+				D52C2F7625FDDB2F00A2D7AA /* Films.swift */,
+			);
+			path = Films;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D52C2F5725FDDA2B00A2D7AA /* ViewController.swift in Sources */,
+				D52C2F7725FDDB2F00A2D7AA /* Films.swift in Sources */,
 				D52C2F5325FDDA2B00A2D7AA /* AppDelegate.swift in Sources */,
 				D52C2F5525FDDA2B00A2D7AA /* SceneDelegate.swift in Sources */,
 			);
