@@ -21,7 +21,8 @@ enum FilmsDataService {
     
     struct Get {
         static func allGhibliFilms(
-            completion: @escaping (APIResults<[GhibliFilm]>?, APIError<[String]>?) -> ()
+            for vm: ViewModelProtocol,
+            completion: @escaping (APIResults<[GhibliFilm]>?, APIError<[String]>?, ViewModelProtocol) -> ()
         ) {
             Network().fetch(
                 requestURL: URL(string: Network.BaseURL.GHIBLI_API.value + Endpoint.all.value)!,
@@ -31,16 +32,16 @@ enum FilmsDataService {
                 case .SUCCESS(let res):
                     do {
                         let data = try JSONDecoder().decode(APIResults<[GhibliFilm]>.self, from: res as! Data)
-                        completion(data, nil)
+                        completion(data, nil, vm)
                     } catch {
-                        completion(nil, APIError<[String]>(errors: ["Error while decoding"]))
+                        completion(nil, APIError<[String]>(errors: ["Error while decoding"]), vm)
                     }
                 case .FAILURE(let err):
                     do {
                         let data = try JSONDecoder().decode(APIError<[String]>.self, from: err as! Data)
-                        completion(nil, data)
+                        completion(nil, data, vm)
                     } catch {
-                        completion(nil, APIError<[String]>(errors: ["Error while decoding"]))
+                        completion(nil, APIError<[String]>(errors: ["Error while decoding"]), vm)
                     }
                 }
                 

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIScreen" customModule="Movie_Filter_Swift" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="ykO-BA-m8M"/>
+                <outlet property="scrollView" destination="Y0C-39-BZw" id="NtB-0F-OlD"/>
+                <outlet property="stackView" destination="Weg-ig-AlK" id="Wes-PO-aaE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0C-39-BZw">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Weg-ig-AlK">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Weg-ig-AlK" firstAttribute="centerY" secondItem="Y0C-39-BZw" secondAttribute="centerY" id="0sH-hA-0Ud"/>
+                        <constraint firstItem="Weg-ig-AlK" firstAttribute="centerX" secondItem="Y0C-39-BZw" secondAttribute="centerX" id="FT4-bg-8hp"/>
+                        <constraint firstItem="Weg-ig-AlK" firstAttribute="leading" secondItem="Y0C-39-BZw" secondAttribute="leading" id="Mvy-MM-Llq"/>
+                        <constraint firstAttribute="bottom" secondItem="Weg-ig-AlK" secondAttribute="bottom" id="SB6-V9-bqD"/>
+                        <constraint firstItem="Weg-ig-AlK" firstAttribute="top" secondItem="Y0C-39-BZw" secondAttribute="top" id="fZo-L9-Jd3"/>
+                        <constraint firstAttribute="trailing" secondItem="Weg-ig-AlK" secondAttribute="trailing" id="hHt-gn-6Kt"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Y0C-39-BZw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="NuC-wb-tq4"/>
+                <constraint firstItem="Y0C-39-BZw" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="WZ1-Mo-fYs"/>
+                <constraint firstItem="Y0C-39-BZw" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="d8G-LG-qxg"/>
+                <constraint firstItem="Y0C-39-BZw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="pw6-2Y-ApX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="122.28260869565219"/>
+        </view>
+    </objects>
+</document>

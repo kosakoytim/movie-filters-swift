@@ -9,10 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    lazy var viewModel = ViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        viewModel.getAllGhibliFilms()
     }
 
 
